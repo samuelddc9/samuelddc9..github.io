@@ -30,7 +30,7 @@ header .logo {
 }
 
 header .logo img {
-  width: 60px; /* Adjust the size of the logo */
+  width: 80px; /* Adjust the size of the logo */
   height: auto;
 }
 
@@ -87,20 +87,40 @@ section {
   color: #fff;
 }
 
-#about, #contact {
+ #contact {
   text-align: center;
   background: #f4f4f4;
+  box-shadow: inset #2e2e2e 0 -2px 3px 0px;
 }
 
 #about h2, #contact h2 {
   color: #2D89EF; /* Primary blue for headers */
+  text-align: center;
 }
+
+#about {
+  text-align:  center;
+  padding: 2% 10%;
+
+
+}
+#about p{
+  max-width: 800px;
+  text-align: justify;
+  margin: 0 auto;
+  margin-top: 15px;
+  text-indent: 30px;
+
+
+}
+
 
 #games {
+  background: linear-gradient(to bottom, rgba(249, 241, 231, 1), rgba(255, 248, 225, 0.8)), url('pattern.jpg');
+  background-blend-mode: luminosity; /* Blend the gradient and pattern */
   text-align: center;
-  background: #FFF176; /* Light yellow for cheerful section */
+  padding: 40px 20px;
 }
-
 #games h2 {
   color: #2D89EF; /* Dark blue for contrast against yellow */
 }
@@ -110,23 +130,27 @@ section {
 }
 
 .game-list {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
+
 }
 
 .game-item {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 600px; /* Increase width for more space */
+  width: 400px; /* Increase width for more space */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
 .game-item img {
-  width: 100%;
+  /*width: 100%;*/
   border-radius: 10px;
+
 }
 
 .carousel {
@@ -137,7 +161,7 @@ section {
 
 .slides {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.9s ease-in-out;
 }
 
 .slides img {
